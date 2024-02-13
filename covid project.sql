@@ -41,7 +41,7 @@ where continent is not null
 Group by continent
 order by td desc
 
-select date, SUM(new_cases) as totalnewcase, SUM(cast(new_deaths as int))
+select date, SUM(cast(new_cases as int)) as totalnewcase, SUM(cast(new_deaths as int))
 from [Portfolioproject]..deaths
 where continent is not null
 Group by date
